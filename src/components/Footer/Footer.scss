@@ -1,0 +1,6 @@
+@import '../../sass/base';
+
+.footer {
+    background-color: $color-secondary;
+    grid-column: full-start / full-end;
+}
