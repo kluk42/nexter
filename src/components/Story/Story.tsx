@@ -1,5 +1,6 @@
 import firstImgPath from '../../assets/story-1.jpeg';
 import secondImgPath from '../../assets/story-2.jpeg';
+import { Button } from '../Button/Button';
 
 import './Story.scss';
 
@@ -19,7 +20,7 @@ export const Story = () => {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio
           necessitatibus pariatur voluptatibus.
         </p>
-        <button className="btn">Find your own home</button>
+        <Button title="Find your own home" />
       </div>
     </>
   );
