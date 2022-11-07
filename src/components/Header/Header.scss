@@ -3,4 +3,61 @@
 .header {
     background-color: $color-grey-dark-1;
     grid-column: full-start / col-end 6;
+
+    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url('../../assets/hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem;
+    padding-top: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: center;
+    
+    &__btn {
+        justify-self: start;
+        align-self: start;
+    }
+
+    &__logo {
+        height: 3rem;
+        justify-self: center;
+    }
+
+    &__heading-first {   
+        margin-top: auto;
+        align-self: flex-start;
+    }
+
+    &__seenon-text {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        align-items: center;
+        column-gap: 1.5rem;
+        width: 100%;
+        margin-top: auto;
+
+        font-size: 1.6rem;
+        color: $color-grey-light-2;
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: currentColor;
+        }
+    }
+
+    &__seenon-logos {
+        display: flex;
+        column-gap: 3rem;
+        justify-content: center;
+        filter: brightness(70%);
+    }
+
+    &__seenon-logo {
+        height: 2.5rem;
+    }
 }
