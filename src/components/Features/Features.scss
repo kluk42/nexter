@@ -10,6 +10,10 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 6rem;
     align-items: start;
+        
+    @media only screen and (max-width: $bp-small) {
+        margin: 8rem 0;
+    }
 }
 
 .feature {
@@ -17,6 +21,10 @@
     grid-template-columns: min-content 1fr;
     row-gap: 1.5rem;
     column-gap: 2.5rem;
+        
+    @media only screen and (max-width: $bp-small) {
+        row-gap: 1rem;
+    }
 
     &__icon {
         width: 4.5rem;
